@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+function main {
+  if [[ ! -x "$(type -P pg_config)" ]]; then
+    return 1
+  fi
+
+  return 0
+}
+
+main "$@"

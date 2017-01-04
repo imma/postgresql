@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+function main {
+  pkg ensure databases/postgresql96
+}
+
+main "$@"
