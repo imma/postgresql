@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
 function main {
+  case "${DISTRIB_ID}" in
+    Amazon)
+      return 1
+      ;;
+  esac
+
   if [[ ! -x "$(type -P pg_config)" ]]; then
     return 1
   fi
