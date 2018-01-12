@@ -3,7 +3,7 @@
 function main {
   case "${DISTRIB_ID}" in
     Amazon)
-      return 1
+      return 0
       ;;
   esac
 
